@@ -1,0 +1,126 @@
+* {
+      box-sizing: border-box;
+      margin: 0px;
+}
+
+:root[data-theme="light"] {
+      --bg-surface: #F8F7F4;
+      --bg-main: #FFFFFF;
+      --bg-interact: #EDEBE6;
+}
+
+#navbar {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid gray;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background-color: var(--bg-surface);
+}
+
+#top-banner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      border-bottom: 1px solid gray;
+      width: 100%;
+      padding: 10px;
+      align-items: center;
+}
+
+#logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+}
+
+#logo {
+      font-size: 35px;
+}
+
+#links {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: var(--bg-interact);
+}
+
+#theme-selector {
+      display: flex;
+      align-items: center;
+      border: 2px solid gray;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      justify-content: center;
+      background-color: var(--bg-interact);
+}
+
+#theme-icon {
+      font-size: 24px;
+      align-items: center;
+      display: flex;
+
+}
+
+#app {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-color: var(--bg-main);
+}
+
+#main {
+      display: flex;
+      min-height: 0;
+      flex: 1;
+}
+
+#content {
+      border-right: 1px solid gray;
+      padding: 20px;
+      flex-grow: 1;
+      overflow-y: auto;
+}
+
+#sidebar {
+      padding: 10px;
+      width: 400px;
+      background-color: var(--bg-surface);
+      flex-grow: 0;
+      flex-shrink: 0;
+}
+
+#sidebar-header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+}
+
+#sidebar-close-btn {
+      margin-top: 5px;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+}
+
+.closebtn {
+      transition: transform 0.3s ease;
+}
+
+.closebtn:hover {
+      transform: scale(1.1);
+}
+
+body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0px;
+      font-size: 18px;
+}
